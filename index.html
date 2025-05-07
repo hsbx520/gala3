@@ -1,0 +1,593 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrumpGala Meme Coin Dinner Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="importmap">
+    {
+        "imports": {
+            "/js/modals.js": "./js/modals.js",
+            "/js/referrals.js": "./js/referrals.js", 
+            "/js/countdown.js": "./js/countdown.js",
+            "/js/rewards-slider.js": "./js/rewards-slider.js"
+        }
+    }
+    </script>
+    <style>
+        .navbar {
+            background-color: #0B0C3D;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid #E05;
+        }
+        .nav-logo {
+            height: 80px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 5px;
+        }
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.3s ease;
+            padding: 10px 15px;
+            border-radius: 30px;
+        }
+        .nav-link:hover {
+            background-color: #E053F;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .nav-mobile-menu-btn {
+                toggle;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <img src="https://gettrumpmemes.com/images/logo.webp" alt="TrumpGala Logo">
+        <nav class="nav-links">
+            <a href="#hero-section" class="nav-link">Home</a>
+            <a href="#presale-section" class="nav-link">Presale</a>
+            <a href="#token-section" class="nav-link">Token</a>
+            <a href="#leaderboard-section" class="nav-link">Leaderboard</a>
+            <a href="#attendees-section" class="nav-link">Dinners</a>
+            <a href="#honor-section" class="nav-link">Honor</a>
+        </nav>
+    </header>
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        HAVE<br>
+                        DINNER<br>
+                        WITH<br>
+                        <span class="highlight-red">PRESIDENT TRUMP</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        The most EXCLUSIVE INVITATION in the World.<br>
+                        Only for the Top 220 $TRUMPGALA Meme Coin Holders.
+                    </p>
+                    <p class="hero-description">
+                        President Donald J. Trump is Known as the "Crypto President!"<br>
+                        At this Intimate Private Dinner, Hear First-Hand President Trump<br>
+                        Talk about the Future of Crypto.
+                    </p>
+                </div>
+                <div class="hero-image">
+                    <img src="https://gettrumpmemes.com/images/Dinner-With-Trump-v2_1.webp" alt="President Trump at Dinner">
+                    <div class="hero-image-caption">
+                        Have Dinner In Washington, D.C.<br>
+                        With President Trump!
+                    </div>
+                </div>
+            </div>
+            <button class="register-button" onclick="scrollToPresale()">Join Trump Gala Celebration</button>
+            <div class="hero-disclaimer">
+                <small>Trump Memes are intended to function as an expression of support for, and engagement with, the ideals and beliefs embodied by the symbol "$TRUMP" and the associated artwork, and are not intended to be, or to be the subject of, an investment opportunity, investment contract, or security of any type. GetTrumpMemes.com is not political and has nothing to do with any political campaign or any political office or governmental agency. See Terms & Conditions Here, See Card Allocation Here.</small>
+            </div>
+        </div>
+    </section>
+    <section class="presale-section" id="presale-section">
+        <div class="presale-container">
+            <div class="presale-countdown">
+                <h2 class="countdown-title">$TRUMPGALA Token Presale Countdown</h2>
+                <div class="countdown-container">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">00</span>
+                        <span class="countdown-label">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">00</span>
+                        <span class="countdown-label">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">00</span>
+                        <span class="countdown-label">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">00</span>
+                        <span class="countdown-label">Seconds</span>
+                    </div>
+                </div>
+            </div>
+            <div class="presale-content">
+                <div class="presale-left">
+                    <h2 class="presale-title">$TRUMPGALA Token Presale Ongoing</h2>
+                    <p class="presale-description">
+                        Want to get $TRUMPGALA? Join the exclusive presale now!
+                    </p>
+                    <p class="presale-details">
+                        Send SOL (Solana) to the official wallet address:
+                    </p>
+                    <div class="wallet-address-container">
+                        <code class="wallet-address" id="wallet-address">TrumpdjbXNoXxyTTfu4Zt6XKvaN8wehpnGDqD1BhSCK</code>
+                        <button class="copy-wallet-btn" onclick="copyWalletAddress()">Copy Address</button>
+                    </div>
+                    <p class="presale-note presale-limit-note">
+                        Minimum purchase per address is 0.1 SOL, maximum is 10 SOL.
+                    </p>
+                    <p class="presale-note">
+                        The system will automatically airdrop equivalent $TRUMPGALA to your wallet after receiving SOL.
+                    </p>
+                    <div class="presale-image">
+                        <img src="https://i.imgur.com/sjAnEbv.png" alt="$TRUMPGALA Token Presale">
+                    </div>
+                </div>
+                <div class="presale-right">
+                    <h2 class="airdrop-title">Free $TRUMPGALA Airdrop & Referral Rewards</h2>
+                    <p class="airdrop-description">
+                        Enter your Solana wallet address, and the system will generate a unique referral link.
+                        Get 2,500 $TRUMPGALA for each successful referral!
+                    </p>
+                    <div class="airdrop-input-container">
+                        <input 
+                            type="text" 
+                            class="solana-wallet-input" 
+                            placeholder="Enter your Solana wallet address"
+                        >
+                        <button class="generate-link-btn">Claim Airdrop and Generate Invite Link</button>
+                    </div>
+                    <div class="invite-link-container">
+                        <input 
+                            type="text" 
+                            class="invite-link" 
+                            readonly 
+                            placeholder="Your referral link will be displayed here"
+                        >
+                        <button class="copy-link-btn">Copy Link</button>
+                    </div>
+                    <div class="airdrop-action-buttons">
+                        <button class="check-invites-btn">Check Referrals</button>
+                        <button class="claim-airdrop-btn">Claim Airdrop</button>
+                    </div>
+                    <div class="invite-rules-section">
+                        <h3 class="invite-rules-title"> <strong> Referral Rules Explanation</strong></h3>
+                        <div class="invite-rules-content">
+                            <p>To ensure activity fairness, we will conduct intelligent detection and anti-cheating monitoring:</p>
+                            <ul>
+                                <li>Each wallet address can only generate one unique referral link.</li>
+                                <li>The system will automatically detect repeated addresses and multi-account referral attempts.</li>
+                                <li><span class="highlight">Any abnormal referrals will result in cancellation of airdrop qualification and address blocking.</span></li>
+                                <li><span class="highlight">Please do not abuse the system. Invite real friends honestly and participate together!</span></li>
+                            </ul>
+                            <p class="invite-rules-footer">Thank you for your support and understanding </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="token-introduction-section" id="token-section">
+        <div class="token-introduction-container">
+            <h2 class="token-introduction-title">🎖️ TRUMPGALA — A Symbol of Presidential Honor</h2>
+            <p class="token-introduction-subtitle">"A Token of Loyalty. A Symbol of History."</p>
+
+            <div class="token-introduction-content">
+                <div class="token-overview">
+                    <h3>Overview</h3>
+                    <p><strong>$TRUMPGALA</strong> is a limited commemorative token issued for the Trump Presidential Special Dinner on May 22, 2025. It is more than just a digital asset; it is an exclusive pass for loyal supporters, a bold attempt to merge the Web3 world with a historic moment.</p>
+                    <blockquote>"Not every dinner is worthy of being written into history, not every token deserves eternal collection."</blockquote>
+                </div>
+
+                <div class="token-mission">
+                    <h3>Mission & Vision</h3>
+                    <p>At the intersection of crypto culture and political reality, <strong>$TRUMPGALA</strong> aims to unite Trump's global supporters, creating a crypto asset with true commemorative value, community cohesion, and participation incentives.</p>
+                    <blockquote>"True believers not only speak up but leave a mark, and <strong>$TRUMPGALA</strong> is your witness to history."</blockquote>
+                </div>
+
+                <div class="token-details">
+                    <h3>🧾 Token Information</h3>
+                    <ul>
+                        <li><strong>Token Name:</strong> <strong>TRUMPGALA</strong></li>
+                        <li><strong>Token Symbol:</strong> <strong>$TRUMPGALA</strong></li>
+                        <li><strong>Blockchain:</strong> <strong>Solana</strong></li>
+                        <li><strong>Total Supply:</strong> 100,000,000</li>
+                    </ul>
+                </div>
+
+                <div class="token-allocation">
+                    <h3>📊 Token Allocation</h3>
+                    <table>
+                        <tr>
+                            <th>Category</th>
+                            <th>Percentage</th>
+                            <th>Amount</th>
+                        </tr>
+                        <tr>
+                            <td><strong>Fair Sale</strong></td>
+                            <td>30%</td>
+                            <td>30,000,000</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Community Rewards</strong></td>
+                            <td>20%</td>
+                            <td>20,000,000</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Liquidity Pool</strong></td>
+                            <td>15%</td>
+                            <td>15,000,000</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Team & Advisor Lockup</strong></td>
+                            <td>25%</td>
+                            <td>25,000,000</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Marketing Fund</strong></td>
+                            <td>5%</td>
+                            <td>5,000,000</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Dinner Participant Airdrop</strong></td>
+                            <td>5%</td>
+                            <td>5,000,000</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="token-benefits">
+                    <h3>🏆 Special Benefits</h3>
+                    <ul>
+                        <li>✅ Top 220 <strong>$TRUMP</strong> token holders qualify for <strong>$TRUMPGALA</strong> airdrop and potential dinner invitation</li>
+                        <li>✅ Daily leaderboard updated in real-time, more holdings increase your chances</li>
+                        <li>✅ Invite friends, unlock rewards, win president-signed memorabilia</li>
+                        <li>✅ Exclusive community pass with priority for future NFTs, limited merchandise, and offline events</li>
+                    </ul>
+                </div>
+
+                <div class="token-community">
+                    <h3>🔗 Community Driven</h3>
+                    <p><strong>$TRUMPGALA</strong> belongs not to a centralized team, but to every believer in freedom, leadership, and crypto.</p>
+                    <blockquote>"This is not just an issuance, but a cultural movement. We're building more than a token—we're creating an identity, a witness to a historic moment."</blockquote>
+                </div>
+
+                <div class="token-timeline">
+                    <h3>📅 Timeline</h3>
+                    <ul>
+                        <li>✅ Project Launch: Early May 2025</li>
+                        <li>🔥 Fair Launch: Mid-May</li>
+                        <li>🎉 Trump Dinner: May 22, 2025</li>
+                        <li>🚀 NFT Series & Collectibles: From June onwards</li>
+                    </ul>
+                </div>
+
+                <div class="token-call-to-action">
+                    <h3>📢 Join Now!</h3>
+                    <p>
+                        💥 Own the token. Join the movement. Be part of history.<br>
+                        💥 Hold <strong>$TRUMPGALA</strong> — Be counted, be remembered.<br>
+                        💥 You are not a spectator, but a participant in history!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="leaderboard-section" id="leaderboard-section">
+        <div class="leaderboard-container">
+            <div class="leaderboard-content">
+                <div class="leaderboard-text">
+                    <h2 class="leaderboard-title">
+                        The Top 220 $TRUMPGALA Owners Will Be Joining President Trump for a Gala Dinner!
+                    </h2>
+                    <p class="leaderboard-description">
+                        Our leaderboard updates hourly in real time. Your $TRUMPGALA coin count puts you in the running. 
+                        The competition is fierce. Own $TRUMPGALA—or watch from the sidelines. 
+                        You must register in order to participate.
+                    </p>
+                    <a href="https://trumpdinner.gettrumpmemes.com/leaderboard" class="view-leaderboard-btn">View Leaderboard</a>
+                </div>
+                <div class="leaderboard-image">
+                    <img src="https://gettrumpmemes.com/images/Leader-board-2_1.webp" alt="$TRUMPGALA Leaderboard">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="invite-rewards-section">
+        <div class="invite-rewards-container">
+            <h2 class="invite-rewards-title">Invite Friends, Climb the Ranks, Earn Epic Rewards</h2>
+            
+            <div class="invite-rewards-slider">
+                <div class="invite-rewards-cards">
+                    <div class="invite-reward-card">
+                        <div class="reward-card-header">
+                            <h3>Invite 10 Friends</h3>
+                        </div>
+                        <img src="https://collecttrumpcards.com/images/Debate-Card_1Debate-Card.webp" alt="Trump Collectible Card">
+                        <div class="reward-card-description">
+                            <span class="reward-emoji">🏆</span>Get an exclusive collectible Trump Card!
+                        </div>
+                    </div>
+
+                    <div class="invite-reward-card">
+                        <div class="reward-card-header">
+                            <h3>Invite 20 Friends</h3>
+                        </div>
+                        <img src="https://collecttrumpcards.com/images/Gold-Sneakers_1Gold-Sneakers.webp" alt="Gold Sneakers">
+                        <div class="reward-card-description">
+                            <span class="reward-emoji">🥇</span>Unlock Limited Edition Trump Gold Sneakers!
+                            <small>Low Top Exclusive Design</small>
+                        </div>
+                    </div>
+
+                    <div class="invite-reward-card">
+                        <div class="reward-card-header">
+                            <h3>Invite 50 Friends</h3>
+                        </div>
+                        <img src="https://collecttrumpcards.com/images/4-pack-straight_14-pack-straight.webp" alt="Digital Trading Cards">
+                        <div class="reward-card-description">
+                            <span class="reward-emoji">🎖️</span>Receive Rare Digital Trading Cards (NFTs)
+                            <small>Exclusive Blockchain Collectibles</small>
+                        </div>
+                    </div>
+
+                    <div class="invite-reward-card">
+                        <div class="reward-card-header">
+                            <h3>Invite 100 Friends</h3>
+                        </div>
+                        <img src="https://collecttrumpcards.com/images/Platinum-Sneakers-signed_1Platinum-Sneakers-signed.webp" alt="Platinum Sneakers">
+                        <div class="reward-card-description">
+                            <span class="reward-emoji">💎</span>Get Official Platinum "STAND WITH TRUMP" Sneakers
+                            <small>Limited to 500 Worldwide</small>
+                        </div>
+                    </div>
+
+                    <div class="invite-reward-card">
+                        <div class="reward-card-header">
+                            <h3>Invite 200+ Friends</h3>
+                        </div>
+                        <img src="https://collecttrumpcards.com/images/SIGNED-Limited-Platinum-High-Tops_v3_1SIGNED-Limited-Platinum-High-Tops_v3.webp" alt="Signed Sneakers">
+                        <div class="reward-card-description">
+                            <span class="reward-emoji">👑</span>Receive Trump's Autographed Sneakers
+                            <small>Only 25 People Worldwide</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="past-attendees-section" id="attendees-section">
+        <div class="past-attendees-container">
+            <h2 class="past-attendees-title">PAST Dinner Attendees Share Their unforgettable Moments</h2>
+            <div class="past-attendees-list">
+                <!-- President Trump's Quote -->
+                <div class="past-attendee-item">
+                    <div class="attendee-content president-quote">
+                        <div class="attendee-quote">
+                            <blockquote>
+                                "We Just Had Dinner For Our Collectors and We Had a Lot of Fun Together. That Was a Great Evening. And I Met Some Fantastic People!"
+                            </blockquote>
+                            <p class="quote-source">- President Donald J. Trump</p>
+                        </div>
+                        <div class="attendee-image">
+                            <!-- <img src="/trump-dinner.png" alt="President Trump at a past dinner"> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skylar K. -->
+                <div class="past-attendee-item">
+                    <div class="attendee-content">
+                        <div class="attendee-image">
+                            <img src="https://collecttrumpcards.com/images/SkylarK_1SkylarK.webp" alt="Skylar K. with President Trump">
+                        </div>
+                        <div class="attendee-quote">
+                            <blockquote>
+                                "Mr. President! This has been my dream to meet you. Thank you thank you thank you CollectTrumpCards. You even took a picture and shook my hand! Wow. I’ve been talking about it with my friends for months. When is the next Gala Dinner?"
+                            </blockquote>
+                            <p class="quote-source">- Skylar K.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Martha N. -->
+                <div class="past-attendee-item">
+                    <div class="attendee-content reverse">
+                         <div class="attendee-image">
+                            <img src="https://collecttrumpcards.com/images/martha-DJT_1martha-DJT.webp" alt="Martha N. with President Trump">
+                        </div>
+                        <div class="attendee-quote">
+                            <blockquote>
+                                “Mar-a-Lago was even better than I could have imagined. The food was exquisite and The President was so gracious to take a picture with me. Thank you TrumpGala Dinner.”
+                            </blockquote>
+                            <p class="quote-source">- Martha N.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- John M. -->
+                <div class="past-attendee-item">
+                    <div class="attendee-content">
+                         <div class="attendee-image">
+                            <img src="https://collecttrumpcards.com/images/JohnnyM_1JohnnyM.webp" alt="John M. with President Trump">
+                        </div>
+                         <div class="attendee-quote">
+                            <blockquote>
+                                “Had the amazing opportunity to meet President Trump at the Gala Dinner! I served in the U.S military and this was a very very special experience. Thank you President Trump for being so generous. You’re the best!”
+                            </blockquote>
+                            <p class="quote-source">- John M.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alan F. -->
+                <div class="past-attendee-item">
+                     <div class="attendee-content reverse">
+                        <div class="attendee-image">
+                            <img src="https://collecttrumpcards.com/images/AlanF_1AlanF.webp" alt="Alan F. at the dinner">
+                        </div>
+                        <div class="attendee-quote">
+                            <blockquote>
+                                “Black trumpet Mushrooms with Trump wine! I came alone, and felt very comfortable. I loved, loved this event with my President! Honestly I was a bit skeptical but this so exceeded my expectations. The President called us his collectors, part of his family! CollectTrumpCards is a great community!”
+                            </blockquote>
+                            <p class="quote-source">- Alan F.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lucas S. -->
+                <div class="past-attendee-item">
+                    <div class="attendee-content">
+                         <div class="attendee-image">
+                            <img src="https://collecttrumpcards.com/images/trading-card_1trading-card.webp" alt="Lucas S. showing signed trading card">
+                        </div>
+                        <div class="attendee-quote">
+                            <blockquote>
+                                "Love my Trump Trading Card with the mugshot suit! HISTORIC! Insane I got to be with other collectors and the President of The United States. The President signed it!"
+                            </blockquote>
+                            <p class="quote-source">- Lucas S.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Poon S. -->
+                <div class="past-attendee-item">
+                     <div class="attendee-content reverse">
+                        <div class="attendee-image">
+                            <img src="https://collecttrumpcards.com/images/PoonS_1PoonS.webp" alt="Poon S. with President Trump">
+                        </div>
+                        <div class="attendee-quote">
+                            <blockquote>
+                                “An unforgettable night at the #CollectTrumpCards VIP Gala Dinner at Mar-a-Lago! We Flew in from Singapore with my wife & it was worth every moment. From the grandeur (Mar-a-Lago), to the inspiring conversations, every detail was perfect. The Highlight! Selfie(s) with the President Trump himself!”
+                            </blockquote>
+                            <p class="quote-source">- Poon S.</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Roger R. -->
+                <div class="past-attendee-item">
+                    <div class="attendee-content">
+                         <div class="attendee-image">
+                            <img src="https://collecttrumpcards.com/images/RogerR_1RogerR.webp" alt="Roger R. with President Trump">
+                        </div>
+                         <div class="attendee-quote">
+                            <blockquote>
+                                "An unforgettable encounter: Engaging and thankful for every minute of his time. Thank you President Trump."
+                            </blockquote>
+                            <p class="quote-source">- Roger R.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Raymond S. -->
+                <div class="past-attendee-item">
+                     <div class="attendee-content reverse">
+                        <div class="attendee-image">
+                            <img src="https://collecttrumpcards.com/images/Reception-Pool_1Reception-Pool.webp" alt="Raymond S. at Mar-A-Lago reception">
+                        </div>
+                        <div class="attendee-quote">
+                            <blockquote>
+                                “Historic night at Mar-A-Lago as Trump embraces the crypto community.”
+                            </blockquote>
+                            <p class="quote-source">- Raymond S.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="honor-section" id="honor-section">
+        <div class="honor-container">
+            <h2 class="honor-title">Honor Belongs Only to True Supporters!</h2>
+            <div class="honor-content">
+                <div class="honor-text">
+                    <p>Participate in the TrumpGALA presale or invite friends to join the airdrop for a chance to receive valuable, amazing <strong>"America First" digital collectible cards</strong>!</p>
+                    <p>In this series, some cards may be <strong>One-of-One globally</strong>, and there's an even greater chance to receive <strong>limited edition cards personally signed by President Donald J. Trump</strong>.</p>
+                    <p>These rare treasures will be distributed randomly, belonging only to the <strong>luckiest and most loyal supporters</strong>!</p>
+                </div>
+                <div class="honor-image">
+                    <img src="https://collecttrumpcards.com/images/4-pack-3-new_14-pack-3-new.webp" alt="Trump Collectible Cards">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="community-section" id="community-section">
+        <div class="community-container">
+            <h2 class="community-title">
+                The First Crypto President in U.S. History – 's History– Trump Leads Chain  Chain!
+                <br>
+                <small>       From White House  House to   Blockchain – Trump Makes Crypto Makes  Again!</small>  
+            </h2>
+            <div class="community-image">
+                <img src="https://i.imgur.com/FgRY2Ba.png" alt="Trump Community">
+            </div>
+        </div>
+    </section>
+    <script type="module">
+        import { initModals } from '/js/modals.js';
+        import { initReferrals } from '/js/referrals.js';
+        import { initCountdown } from '/js/countdown.js';
+        import { initRewardsSlider } from '/js/rewards-slider.js';
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initModals();
+            initReferrals();
+            initCountdown();
+            initRewardsSlider();
+        });
+    </script>
+    <script>
+        function scrollToPresale() {
+            document.querySelector('.presale-section').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        function copyWalletAddress() {
+            const walletAddressElement = document.getElementById('wallet-address');
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = walletAddressElement.textContent;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextArea);
+
+            const copyButton = event.target;
+            const originalText = copyButton.textContent;
+            copyButton.textContent = 'Copied!';
+            copyButton.style.backgroundColor = '#4CAF50';
+
+            setTimeout(() => {
+                copyButton.textContent = originalText;
+                copyButton.style.backgroundColor = '#E0173F';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
